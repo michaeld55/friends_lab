@@ -47,13 +47,26 @@ result =[]
 end
 
 def all_foods(persons)
-all_snacks = []
+  all_snacks = []
 
-for person in persons
-  all_snacks.push (person[:favourites][:snacks]).to_s
+    for person in persons
+      all_snacks.concat(person[:favourites][:snacks])
+    end
+
+
+  return all_snacks
+    # for person get there snacks add too new thing
+
 end
 
-return all_snacks
-  # for person get there snacks add too new thing
+def no_friends(persons)
+
+  friend =[]
+  for person in persons
+    if person[:friends].size == 0
+      return person
+    end
+
+  end
 
 end

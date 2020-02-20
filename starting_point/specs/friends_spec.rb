@@ -133,11 +133,17 @@ end
 def test_all_foods
 
   result = all_foods(@people)
-  assert_equal("all",result)
+  assert_equal(["charcuterie", "soup", "bread", "Scooby snacks", "spaghetti", "ratatouille", "spinach"], result)
 
 end
 
   # 9. Find people with no friends
+  def test_no_friends
+
+    result = no_friends(@people)
+    assert_equal(@person5, result)
+
+  end
   # (hint: return an array, there might be more people in the future with no friends!)
 
 end
