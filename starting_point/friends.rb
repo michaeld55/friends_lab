@@ -12,8 +12,17 @@ end
 
 def likes_to_eat(person, food)
 
-  any_person = person[:favourites][:snacks].any?
+  any_person = person[:favourites][:snacks].any?food
 
    return any_person
+
+end
+
+def add_friend(person, friend)
+
+  person[:friends].push(friend)
+  return person[:friends].size
+
+  # add new person
 
 end
