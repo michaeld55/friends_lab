@@ -45,3 +45,10 @@ result =[]
   # binding.pry
   return result
 end
+
+def all_foods(person)
+
+  all_snacks == 
+  # for person get there snacks add too new thing
+
+end
