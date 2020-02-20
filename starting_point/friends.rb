@@ -26,3 +26,15 @@ def add_friend(person, friend)
   # add new person
 
 end
+def remove_friend(person)
+  person[:friends].shift
+  return person[:friends].size
+end
+
+def total_money(person)
+  # binding.pry
+    return @people.reduce(0) {|total, person| total + person[:monies]}
+
+    # united_kingdom.reduce(0) { |total, country| total + country[:population]}
+
+end
