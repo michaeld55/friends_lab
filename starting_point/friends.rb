@@ -35,6 +35,13 @@ def total_money(person)
   # binding.pry
     return @people.reduce(0) {|total, person| total + person[:monies]}
 
-    # united_kingdom.reduce(0) { |total, country| total + country[:population]}
+end
 
+def loan_money(loanee, loaner, loan)
+
+result =[]
+  result.push(loanee[:monies] - loan)
+  result.push(loaner[:monies] + loan)
+  # binding.pry
+  return result
 end
