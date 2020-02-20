@@ -21,14 +21,14 @@ end
 def add_friend(person, friend)
 
   person[:friends].push(friend)
-  return person[:friends].size
+  # return person[:friends].size
 
   # add new person
 
 end
 def remove_friend(person)
   person[:friends].shift
-  return person[:friends].size
+  # return person[:friends].size
 end
 
 def total_money(person)
@@ -46,9 +46,14 @@ result =[]
   return result
 end
 
-def all_foods(person)
+def all_foods(persons)
+all_snacks = []
 
-  all_snacks == 
+for person in persons
+  all_snacks.push (person[:favourites][:snacks]).to_s
+end
+
+return all_snacks
   # for person get there snacks add too new thing
 
 end

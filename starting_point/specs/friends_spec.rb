@@ -101,7 +101,7 @@ end
 def test_add_friend
 
   result = add_friend(@person2, "Scrappy-Doo")
-  assert_equal(2, result)
+  assert_equal(2, @person2[:friends].size)
 
 
 end
@@ -110,7 +110,7 @@ end
   # (hint: Same as above, testing for the length of the array should be sufficient)
   def test_remove_friend
     result = remove_friend(@person1)
-    assert_equal(3, result)
+    assert_equal(3, @person1[:friends].size)
   end
 
   # 6. Find the total of everyone's money
